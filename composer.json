@@ -1,0 +1,16 @@
+{
+    "name": "siiiiisar/oop-playground",
+    "description": "oop playground",
+    "autoload": {
+        "psr-4": {
+            "Siiiiisar\\OopPlayground\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "siiiiisar",
+            "email": "shunsuke.ue@gmail.com"
+        }
+    ],
+    "require": {}
+}
