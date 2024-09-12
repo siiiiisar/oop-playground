@@ -9,16 +9,16 @@ use Siiiiisar\OopPlayground\DesignPattern\TemplateMethod\AbstructClass\AbstructD
 /**
  * ConcreteClassクラスに相当する
  * 
- * 一覧形式でデータを表示する
+ * 表形式でデータを表示する
  */
-class ListDisplay extends AbstructDisplay
+class TableDisplay extends AbstructDisplay
 {
     /**
      * @inheritDoc
      */
     protected function displayHeader(): void
     {
-        echo '<dl>';
+        echo '<table border="1">';
     }
 
     /**
@@ -27,8 +27,10 @@ class ListDisplay extends AbstructDisplay
     protected function displayBody(): void
     {
         foreach ($this->getData() as $key => $value) {
-            echo '<dt>Item' . $key . '</dt>';
-            echo '<dd>' . $value . '</dd>';
+            echo '<tr>';
+            echo '<th>' . $key . '</th>';
+            echo '<td>' . $value . '</td>';
+            echo '</tr>';
         }
     }
 
@@ -37,6 +39,6 @@ class ListDisplay extends AbstructDisplay
      */
     protected function displayFooter(): void
     {
-        echo '</dl>';
+        echo '</table>';
     }
 }
