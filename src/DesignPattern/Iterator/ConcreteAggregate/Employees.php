@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Siiiiisar\OopPlayground\DesignPattern\Iterator\ConcreteAggregate;
 
 use ArrayObject;
+use Iterator;
 use IteratorAggregate;
 use Siiiiisar\OopPlayground\DesignPattern\Iterator\Employee\Employee;
-use Traversable;
 
 class Employees implements IteratorAggregate
 {
     /**
-     * @param ArrayObject $employees
+     * @param ArrayObject<Employee> $employees
      */
     public function __construct(
         private ArrayObject $employees = new ArrayObject()
@@ -29,9 +29,9 @@ class Employees implements IteratorAggregate
     }
 
     /**
-     * @return Traversable
+     * @return Iterator<Employee>
      */
-    public function getIterator(): Traversable
+    public function getIterator(): Iterator
     {
         return $this->employees->getIterator();
     }

@@ -9,15 +9,14 @@ use Siiiiisar\OopPlayground\DesignPattern\Iterator\ConcreteAggregate\Employees;
 use Siiiiisar\OopPlayground\DesignPattern\Iterator\ConcreteIterator\SalesmanIterator;
 use Siiiiisar\OopPlayground\DesignPattern\Iterator\Employee\Employee;
 use Siiiiisar\OopPlayground\DesignPattern\Iterator\Enum\Job;
-use Traversable;
 
 require __DIR__ . '/../../../vendor/autoload.php';
 
 /**
- * @param Traversable<int, Employee> $iterator
+ * @param Iterator<Employee> $iterator
  * @return void
  */
-function dumpWithForeach(Traversable $iterator): void
+function dumpWithForeach(Iterator $iterator): void
 {
     foreach ($iterator as $employee) {
         print($employee->getName() . PHP_EOL);
@@ -37,3 +36,12 @@ $iterator = $employees->getIterator();
 dumpWithForeach($iterator);
 
 dumpWithForeach(new SalesmanIterator($iterator));
+
+$iterator->rewind();
+
+while ($iterator->valid()) {
+    echo $iterator->current()->getName() . PHP_EOL;
+    echo $iterator->current()->getAge() . PHP_EOL;
+    echo $iterator->current()->getJob()->text() . PHP_EOL;
+    $iterator->next();
+}
