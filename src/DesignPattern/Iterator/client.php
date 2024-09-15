@@ -29,7 +29,7 @@ function dumpWithForeach(Iterator $iterator): void
 $employees = new Employees();
 $employees->add(new Employee('田中太郎', 23, Job::SALES));
 $employees->add(new Employee('田中次郎', 25, Job::HR));
-$employees->add(new Employee('田中次郎', 25, Job::MANAGER));
+$employees->add(new Employee('田中三郎', 25, Job::MANAGER));
 
 $iterator = $employees->getIterator();
 
@@ -44,4 +44,9 @@ while ($iterator->valid()) {
     echo $iterator->current()->getAge() . PHP_EOL;
     echo $iterator->current()->getJob()->text() . PHP_EOL;
     $iterator->next();
+}
+
+// IteratorAggregateを実装している場合はgetIteratorを省略できる
+foreach ($employees as $employee) {
+    echo "{$employee->getName()}\n";
 }
