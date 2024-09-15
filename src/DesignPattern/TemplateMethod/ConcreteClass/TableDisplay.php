@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Siiiiisar\OopPlayground\DesignPattern\TemplateMethod\ConcreteClass;
 
-use Siiiiisar\OopPlayground\DesignPattern\TemplateMethod\AbstructClass\AbstructDisplay;
+use Siiiiisar\OopPlayground\DesignPattern\TemplateMethod\AbstractClass\AbstractDisplay;
 
 /**
  * ConcreteClassクラスに相当する
  * 
  * 表形式でデータを表示する
  */
-class TableDisplay extends AbstructDisplay
+class TableDisplay extends AbstractDisplay
 {
     /**
      * @inheritDoc

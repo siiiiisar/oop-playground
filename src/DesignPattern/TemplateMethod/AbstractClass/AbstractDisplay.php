@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Siiiiisar\OopPlayground\DesignPattern\TemplateMethod\AbstructClass;
+namespace Siiiiisar\OopPlayground\DesignPattern\TemplateMethod\AbstractClass;
 
 /**
  * AbstructClass
  */
-abstract class AbstructDisplay
+abstract class AbstractDisplay
 {
   /**
    * @param array $data
