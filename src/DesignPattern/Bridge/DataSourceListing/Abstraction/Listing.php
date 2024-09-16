@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Siiiiisar\OopPlayground\DesignPattern\Bridge\Abstraction;
+namespace Siiiiisar\OopPlayground\DesignPattern\Bridge\DataSourceListing\Abstraction;
 
-use Siiiiisar\OopPlayground\DesignPattern\Bridge\Implementor\DataSourceInterface;
+use Siiiiisar\OopPlayground\DesignPattern\Bridge\DataSourceListing\Implementor\DataSourceInterface;
 
 /**
  * 「何をするのか」

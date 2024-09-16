@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Siiiiisar\OopPlayground\DesignPattern\Bridge\RefinedAbstraction;
+namespace Siiiiisar\OopPlayground\DesignPattern\Bridge\DataSourceListing\RefinedAbstraction;
 
-use Siiiiisar\OopPlayground\DesignPattern\Bridge\Abstraction\Listing;
-use Siiiiisar\OopPlayground\DesignPattern\Bridge\Implementor\DataSourceInterface;
+use Siiiiisar\OopPlayground\DesignPattern\Bridge\DataSourceListing\Abstraction\Listing;
+use Siiiiisar\OopPlayground\DesignPattern\Bridge\DataSourceListing\Implementor\DataSourceInterface;
 
 /**
  * Listingの機能を拡張

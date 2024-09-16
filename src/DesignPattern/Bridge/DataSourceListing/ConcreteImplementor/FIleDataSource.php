@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Siiiiisar\OopPlayground\DesignPattern\Bridge\ConcreteImplementor;
+namespace Siiiiisar\OopPlayground\DesignPattern\Bridge\DataSourceListing\ConcreteImplementor;
 
 use Exception;
-use Siiiiisar\OopPlayground\DesignPattern\Bridge\Implementor\DataSourceInterface;
+use Siiiiisar\OopPlayground\DesignPattern\Bridge\DataSourceListing\Implementor\DataSourceInterface;
 use SplFileObject;
 
 /**

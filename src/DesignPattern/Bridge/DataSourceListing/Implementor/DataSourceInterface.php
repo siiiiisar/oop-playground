@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-namespace Siiiiisar\OopPlayground\DesignPattern\Bridge\Implementor;
+namespace Siiiiisar\OopPlayground\DesignPattern\Bridge\DataSourceListing\Implementor;
+
 
 /**
  * どうやって実現するのかの抽象
